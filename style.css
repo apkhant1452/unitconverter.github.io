@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+   
+}
+
+.menu-bar {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    background-color: #4b2e2e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-bar button {
+    background: #4b2e2e;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    flex: 1 0 auto;
+    margin: 0 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-bar button i {
+    font-size: 24px;
+}
+
+.menu-bar button span {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menu-bar button.active {
+    background: #7c4d4d;
+}
+
+.converter {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.converter.active {
+    display: block;
+}
+
+.converter select,
+.converter input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+}
+.result-box {
+    background-color: #2d2d2d;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    height: 15px;
+    user-select: none;
+}
+.num-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.num-pad button {
+    background: #444;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px; user-select: none;
+}
+
+.num-pad button:hover {
+    background-color: cadetblue;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .num-pad button {
+        padding: 15px;
+        font-size: 16px;
+    }
+}

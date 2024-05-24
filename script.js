@@ -68,7 +68,7 @@ function convertArea(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertLength(value, from, to) {
@@ -83,7 +83,7 @@ function convertLength(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertTemperature(value, from, to) {
@@ -107,7 +107,7 @@ function convertTemperature(value, from, to) {
             result = ((value - 273.15) * 9/5) + 32;
         }
     }
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertVolume(value, from, to) {
@@ -122,7 +122,7 @@ function convertVolume(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertMass(value, from, to) {
@@ -136,7 +136,7 @@ function convertMass(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertTime(value, from, to) {
@@ -151,7 +151,7 @@ function convertTime(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertData(value, from, to) {
@@ -165,7 +165,7 @@ function convertData(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 function convertSpeed(value, from, to) {
@@ -177,7 +177,7 @@ function convertSpeed(value, from, to) {
     };
 
     const result = value * conversionRates[from][to];
-    return `${result.toFixed(5)} ${to}`;
+    return `${result.toFixed(2)} ${to}`;
 }
 
 

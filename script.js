@@ -17,20 +17,21 @@ function showConverter(type) {
 
 function appendNumber(number) {
     currentInput += number;
-    const activeConverter = document.querySelector('.converter.active');
-    const unitSelect = activeConverter.querySelector('select');
-    const unit = unitSelect.value;
-    document.querySelector('.converter.active input').value =currentInput+  "  " +unit;
-
+    updateinputfield();
     updateConversion();
 }
 
 function clearInput() {
     currentInput = '';
-    document.querySelector('.converter.active input').value = '';
+    updateinputfield();
     updateConversion();
 }
-
+function updateinputfield() {
+    const activeConverter=document.querySelector('.converter.active');
+    const unitSelet=activeConverter.querySelector('select:nth-of-type(1)');
+    const unit=unitSelet.value;
+    activeConverter.querySelector('input').value=currentInput ? `${currentInput}  ${unit}` : '';
+}
 function updateConversion() {
     const activeConverter = document.querySelector('.converter.active');
     const inputValue = parseFloat(currentInput) || 0;
@@ -183,5 +184,8 @@ function convertSpeed(value, from, to) {
     const result = value * conversionRates[from][to];
     return `${result.toFixed(2)} ${to}`;
 }
+document.querySelectorAll('.converter select:nth-of-type(1)').forEach(select=>{
+    select.addEventListener('change',updateinputfield)
+})
 
 

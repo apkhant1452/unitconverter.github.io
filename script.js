@@ -17,7 +17,11 @@ function showConverter(type) {
 
 function appendNumber(number) {
     currentInput += number;
-    document.querySelector('.converter.active input').value = currentInput;
+    const activeConverter = document.querySelector('.converter.active');
+    const unitSelect = activeConverter.querySelector('select');
+    const unit = unitSelect.value;
+    document.querySelector('.converter.active input').value =currentInput+  "  " +unit;
+
     updateConversion();
 }
 

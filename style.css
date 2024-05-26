@@ -64,11 +64,17 @@ body {
 .converter select,
 .converter input {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-    color: #000;
+    user-select: none;
+    background-color: #444;
+}
+input{
+    text-align:center;
+    padding: 10px 0 !important;
+    color:#fff;
 }
 .result-box {
     background-color: #2d2d2d;
@@ -99,7 +105,7 @@ body {
 }
 
 .num-pad button:hover {
-    background-color: cadetblue;
+    background-color: rgba(235, 206, 154, 0.349);
 }
 
 @media (max-width: 450px) {

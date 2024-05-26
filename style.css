@@ -74,7 +74,8 @@ body {
 input{
     text-align:center;
     padding: 10px 0 !important;
-    color:#fff;
+    color:#fff;    
+    font-size: 20px;
     font-weight: bold;
     background-color: #2d2d2d  !important ;
 
@@ -86,6 +87,7 @@ input{
     border-radius: 5px;
     border: 1px solid #555;
     color: #fff;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     height: 15px;

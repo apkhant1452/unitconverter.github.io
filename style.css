@@ -75,6 +75,9 @@ input{
     text-align:center;
     padding: 10px 0 !important;
     color:#fff;
+    font-weight: bold;
+    background-color: #2d2d2d  !important ;
+
 }
 .result-box {
     background-color: #2d2d2d;
